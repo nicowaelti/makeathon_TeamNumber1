@@ -4,7 +4,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return render_template('index.html')
+    return render_template('index.html')  # Render the index.html template
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# No need to use app.run() since Azure will handle the server in production
