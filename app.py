@@ -1,9 +1,9 @@
-from flask import Flask, render_template
+from flask import Flask, send_file
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return render_template('index.html')  # Render the index.html template
+    return send_file('index.html')  # Serve index.html from the root directory
 
-# No need to use app.run() since Azure will handle the server in production
+# No need to use app.run() since the server will handle this in production
