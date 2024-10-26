@@ -7,5 +7,3 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.9.0
-    repo: https://github.com/nicowaelti/makeathon_TeamNumber1.git
-    branch: main
